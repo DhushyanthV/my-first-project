@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>krisamnaz</title>
+    <link rel="shortcut icon" href="assets/images/bg_2.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/cs/home.css">
+</head>
+<body>
+    
+    <!-- <div>
+        <form class="input-group" onsubmit="sub(event)">
+            <input type="text" class="form-control" id="usersearch" onkeyup="sub(event)"> 
+            <input type="submit" value="search"  class="btn btn-danger">
+        </form>
+    </div> -->
+    <div class="navbar">
+        <div>
+          <h1 class="title">KRISAM Icecream Shop</h1>  
+        </div>
+        <div class="icons">
+            <i class="fa-solid fa-magnifying-glass" data-bs-toggle="modal" data-bs-target="#search"></i>
+
+            <i class="fa-solid fa-cart-shopping" data-bs-toggle="modal" data-bs-target="#cart"></i>
+            <span id="buyproducts" style="background-color: rgb(198, 198, 212);"></span>
+            <i class="fa solid fa-heart" data-bs-toggle="modal" data-bs-target="#Whishes"></i>
+        </div>
+        
+
+    </div>
+   
+    
+<div class="modal" tabindex="-1" id="search" >
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content rounded-3">
+      <div class="modal-header">
+        <form action="" class="input-group my-4">
+            <input type="text" class="form-control" id="usersearch" onkeyup="sub(event)">
+            <input type="submit" value="search"  class="btn" id="searchbox"> 
+
+        </form>      
+      </div> 
+      <div class="row" id="cards1">   
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row" id="cards">
+        </div>1
+<div class="modal fade pillMmodal" id="cart" >
+  <div class="modal-dialog modal-lg ">
+    <div class="modal-content pill-modal">
+      
+      
+    
+      <div class="modal-header pill-modal">
+        <h3>Your Icecream orders</h3>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <h3 class="text-end" id="ta">Total Amount:</h3>
+      <div class="modal-body">
+        <table class="table table-border-less text-center tabledesign pill-modal">
+          <thead >
+            <tr style="border-bottom: none;">
+              <th>Name</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Tatal Price</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="carttable">
+
+          </tbody>
+
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+<!-- <h1 id="wish"></h1> -->
+ <div class="modal" tabindex="-1" id="Whishes" >
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content rounded-3">
+      <div class="modal-header">
+            
+      </div> 
+      <div class="row" id="wish">   
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+    <script src="assets/js/home.js"></script>
+</body>
+</html>
